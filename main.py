@@ -1,5 +1,6 @@
 # python3
-
+runs:
+  using: 'node16'
 class Query:
     def __init__(self, query):
         self.type = query[0]
