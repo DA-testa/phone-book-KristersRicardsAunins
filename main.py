@@ -20,6 +20,7 @@ def process_queries(queries):
     contacts = []
     for cur_query in queries:
         if cur_query.type == 'add':
+            contacts[cur_query.number] = cur_query.name
             # if we already have contact with such number,
             # we should rewrite contact's name
             for contact in contacts:
